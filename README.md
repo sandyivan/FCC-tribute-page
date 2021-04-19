@@ -9,4 +9,4 @@ Project is created with:
 * live server ( vscode extension to launch a development local server with live reload feature for static and dynamic pages)
 
 
-## You can view it here --> 
+### You can view it here > https://sandyivan.github.io/FCC-tribute-page/
