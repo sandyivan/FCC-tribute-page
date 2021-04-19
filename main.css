@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Open+Sans:wght@300&display=swap');
+
+/* Global styles */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #e7e7e7;
+  background: rgb(19, 19, 19);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(3, 155, 155);
+}
+
+a:hover {
+  color: rgba(249, 105, 14, 1);
+}
+
+h3 {
+   color: rgb(3, 155, 155);
+   font-family: 'Montserrat', sans-serif;;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+ 
+.container {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.about {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 70rem;
+  margin: auto;
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  
+}
+
+#img-caption {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; ;
+  font-size: 20px;
+}
+
+#tribute-info {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  margin-left: 50px;
+}
+
+#tribute-info h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+#tribute-info p {
+  font-size: 1.4rem;
+  padding: 0;
+  margin-bottom: 1.45rem;
+}
+
+
+
+hr {
+  margin: 4rem 0;
+  background: linear-gradient(
+    to right,
+    rgba(249, 105, 14, 1) 0%,
+    rgba(102, 51, 153, 1) 100%
+  );
+  border: 0;
+  height: 1px;
+}
+
+
+
+/* Responsive Design */
+
+@media (max-width: 750px) {
+  .about .container {
+    flex-direction: column;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  #img-caption {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  #tribute-info h2 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+
+}
+
+@media (max-width: 665px) {
+  #tribute-info h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  #tribute-info p {
+    margin: 0 0 2.45rem;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+
+}
